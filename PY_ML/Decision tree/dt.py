@@ -1,4 +1,3 @@
-from typing import Counter
 import numpy as np
 from collections import Counter
 
@@ -48,7 +47,7 @@ class DecisionTree(object):
     def __branch(self, X, y, depth):
         node = _Node()
 
-        feature_index, tresh = self.split(X, y)
+        feature_index, tresh = self.__split(X, y)
 
         if feature_index is None: 
             # Если feature_index None, значит по какой-то причине не получилось разделить элементы. Это может случиться по следующим причнам:
@@ -91,7 +90,7 @@ class DecisionTree(object):
         self.n_features = X.shape[1]
         self.__build(X, y)
 
-    def split(self, X, y):
+    def __split(self, X, y):
         """
         Внутренняя функция. Разбивает матрицу на 2 смежные части, максимизируя критерий.
         """
@@ -158,133 +157,11 @@ class DecisionTree(object):
     def print(self):
         self.__print(self.root, 0)
 
-
     def predict(self, X):
         """
         Выводит вектор предсказаний для заданной матрицы X
         """
         return np.array([self.__predict_single(x) for x in X])
 
-from sklearn.model_selection import train_test_split
-
-from sklearn.metrics import accuracy_score
-
-from sklearn.datasets import load_digits
-
-def main():
-    x = np.array([[1], [1], [1], [1], [1], [1], [0], [0], [0], [0], [0]])
-    y = np.array([1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0])
-
-    dt = DecisionTree(1000, 1)
-    dt.fit(x, y)
-
-    dt.print()
-
-    y_pred = dt.predict(x)
-
-    print(f'y:      {y}')
-    print(f'y_pred: {y}')
-
-    print(accuracy_score(y_pred, y))
-    exit(0)
-
-def main1():
-    np.random.seed(3)
-
-    n1 = 500
-    n2 = 500
-
-    # n1 = 2
-    # n2 = 2
-
-    cls = [0, 1]
-
-    x1 = np.random.randn(n1, 2)
-    # x2 = np.random.randn(40, 2) + np.array([0.7, 0.7])
-    # x2 = np.random.randn(n2, 2) + 1.5
-    x2 = np.random.randn(n2, 2) + 0.5
-
-    x = np.concatenate([x1, x2], axis=0)
-    y = np.array([cls[0]] * n1 + [cls[1]] * n2)
-    # y = np.array(list(range(n1 + n2)))
-
-    print(f'{x.shape=}')
-    print(f'{y.shape=}')
-
-    perm = np.random.permutation(n1 + n2)
-
-    x = x[perm]
-    y = y[perm]
-
-    dt = DecisionTree(1000, 1)
-    dt.fit(x, y)
-    dt.print()
-
-    y_pred = dt.predict(x)
-
-    print(f'y:      {y}')
-    print(f'y_pred: {y_pred}')
-
-    print(f'train_accuracy: {accuracy_score(y_pred, y)}')
-
-    n_grid_points = 300
-    x_grid = np.linspace(-3, 3, n_grid_points)
-    y_grid = np.linspace(-3, 3, n_grid_points)
-
-    points = []
-    for xp in x_grid:
-        for yp in y_grid:
-            points.append([xp, yp])
-
-    points = np.array(points)
-
-    points_pred = dt.predict(points)
-
-    points1 = points[points_pred == cls[0]]
-    points2 = points[points_pred == cls[1]]
-
-    fig, ax = plt.subplots()
-
-    color1 = (0, 0, 1)
-    color2 = (1, 0, 0)
-
-    ax.plot(*list(zip(*points1)), color=color1, alpha=0.05, marker='o', linestyle='')
-    ax.plot(*list(zip(*points2)), color=color2, alpha=0.05, marker='o', linestyle='')
-
-    ax.plot(*list(zip(*x1)), color=color1, alpha=1, marker='.', linestyle='')
-    ax.plot(*list(zip(*x2)), color=color2, alpha=1, marker='.', linestyle='')
-
-    plt.show()
-
-def main2():
-    data = load_digits()
-    X, y = data.data, data.target
-
-    dt = DecisionTree(max_tree_depth=10, min_node_records=3)
-
-    x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=17)
-
-    print(f'{x_train.shape=}')
-    print(f'{y_train.shape=}')
-
-    dt.fit(x_train, y_train)
-    dt.print()
-
-    y_train_pred = dt.predict(x_train)
-    y_test_pred = dt.predict(x_test)
-
-    print(f'train accuracy: {accuracy_score(y_train_pred, y_train)}')
-    print(f'test_accuracy: {accuracy_score(y_test_pred, y_test)}')
-
 if __name__ == '__main__':
-
-    import time
-
-    start = time.time()
-
-    # main()
-    # main1()
-    main2()
-
-    end = time.time()
-    print(f'elapsed_time: {end - start}s')
+    raise Exception('module standalone execution prohibited')
