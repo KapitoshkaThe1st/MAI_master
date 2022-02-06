@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="893D2005-2A9F-2852-DA62-1DAF9149CD8B">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 18:51:18 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

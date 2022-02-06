@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="AD936792-449B-31D4-8838-96E064C66417" mainViewID="4365AFB9-B1D2-BF38-03A0-F2B3F3798662">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 18:51:17 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF23D045-6410-DC9A-32CC-D2AE57737AC3" name="CORRECTION_FACTS">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 18:51:34 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fact_id" id="8B81E0AE-F96D-4139-32F7-7171E5C0568E">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:07:14 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="corrections_count" id="EF756AE3-92C8-6E31-D406-8098E8E6CE0C">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:07:32 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_PATH_id" id="240C874A-DA7E-A743-029D-76DAE879F3B6">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:48:59 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3F752FD-6F36-FDA7-BE2A-1ED37A15D68D" referredColumn="4181A5F7-FA28-C2C2-DF2B-78E52615B23C"/>
+</associations>
+</Column>
+<Column name="DIM_USER_id" id="675D551E-CAAF-AE52-62BD-762C1DFFE8ED">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:04 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="892A19EB-BD15-E8FC-4DF8-2211EE21B284" referredColumn="087A6D43-8ECE-0DC4-50A8-8D769A35234B"/>
+</associations>
+</Column>
+<Column name="DIM_DOCTYPE_id" id="6D15C2FD-AABE-D438-0EC1-6B6CA1634514">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:13 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC2E1AD3-7D08-1BB0-E845-1704274B574C" referredColumn="5F85E8EF-78AD-B33B-99DD-3E23C650220E"/>
+</associations>
+</Column>
+<Column name="DIM_DATE_id" id="BCC9D83B-0376-9C21-A5F8-CAD144BD458F">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:23 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5383C5D8-8E80-D49A-DBC8-38DCDDA2B98A" referredColumn="D04018B3-D6E1-D5B6-D901-36B956A4DFBC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC50439A-C98E-5ECE-3FC1-69707AF3545B" name="CORRECTION_FACTS_DIM_PATH_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:48:59 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="240C874A-DA7E-A743-029D-76DAE879F3B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23330CA6-9104-577D-8433-E236ABB38FC9" name="CORRECTION_FACTS_DIM_USER_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:04 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="675D551E-CAAF-AE52-62BD-762C1DFFE8ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E66C94C-1483-AFE5-1146-39B6321C03DD" name="CORRECTION_FACTS_DIM_DOCTYPE_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:13 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D15C2FD-AABE-D438-0EC1-6B6CA1634514"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1AFD5F5-49B6-AA5F-7986-B28A99DBDB68" name="CORRECTION_FACTS_DIM_DATE_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:23 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCC9D83B-0376-9C21-A5F8-CAD144BD458F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

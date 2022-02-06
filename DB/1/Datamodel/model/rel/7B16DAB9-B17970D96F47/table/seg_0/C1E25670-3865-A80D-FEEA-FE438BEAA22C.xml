@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1E25670-3865-A80D-FEEA-FE438BEAA22C" name="QUESTION">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:33:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUESTION_ID" id="6BB29A33-AF5E-3BFA-B0B1-EE9248FE87E4">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:35:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ASKER_USER_ID" id="F4916BCF-EB63-22AD-4C90-0EB374E36952">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:22:24 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F39D23E8-A6CD-DE0F-3D83-A9FA417516F9" referredColumn="55310D25-3D27-38E1-E383-1022CF6CAFF3"/>
+</associations>
+</Column>
+<Column name="TEXT" id="E3F0BF3A-DE3F-69F1-8D64-61B12A6F685D">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 19:50:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="EA98B027-5FBD-61A7-0264-F84EE1967F13">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:35:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD31A750-8E78-4C8F-B20B-9DC57EE1B2FD" name="QUESTION_PK">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:35:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BB29A33-AF5E-3BFA-B0B1-EE9248FE87E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB2C895B-8BA8-5FA1-8BB1-029BC117F430" name="QUESTION_USER_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:22:24 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4916BCF-EB63-22AD-4C90-0EB374E36952"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

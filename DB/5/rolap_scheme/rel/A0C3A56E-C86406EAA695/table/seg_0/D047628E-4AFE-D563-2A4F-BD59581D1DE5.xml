@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D047628E-4AFE-D563-2A4F-BD59581D1DE5" name="DIM_PATH">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:39:02 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="path_id" id="4181A5F7-FA28-C2C2-DF2B-78E52615B23C">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:40:25 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="path" id="08F8F9EB-7097-5158-BE39-2D7A9868A1DB">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:40:25 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2048 CHAR</dataTypeSize>
+<ownDataTypeParameters>2048 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7F1BA77-8826-D1BA-1CF2-20D259597C95" name="DIM_FOLDER_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:47:54 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4181A5F7-FA28-C2C2-DF2B-78E52615B23C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

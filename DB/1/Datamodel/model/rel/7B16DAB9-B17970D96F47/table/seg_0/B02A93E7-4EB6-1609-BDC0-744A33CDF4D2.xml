@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B02A93E7-4EB6-1609-BDC0-744A33CDF4D2" name="QUESTION_COMMENT">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:18:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUESTION_COMMENT_ID" id="7FDF7C80-7CF8-7D98-7A55-8B634F7324B2">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:19:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUESTION_ID" id="26F75BB2-E7A6-FF90-5FD2-EBED6670D9C2">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:35:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F201CEE6-61F3-BEDF-6A92-32324CEA386A" referredColumn="6BB29A33-AF5E-3BFA-B0B1-EE9248FE87E4"/>
+</associations>
+</Column>
+<Column name="USER_USER_ID" id="2159DD17-032C-EEFA-929A-EC7284FC9C1E">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:37:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="108EF891-E025-5961-49CF-0C700B8F1BE1" referredColumn="55310D25-3D27-38E1-E383-1022CF6CAFF3"/>
+</associations>
+</Column>
+<Column name="TEXT" id="7DD6272F-E2A9-217D-12AF-58C047E9830B">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:19:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOTES" id="F57452F5-EE16-F2C7-A037-8778268031B8">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:19:43 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="C31EFA7E-60C5-9FF7-173D-810C7C0E4C45">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 20:05:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FF388D2-F15E-696C-C8CE-484CA535FBCD" name="QUESTION_COMMENT_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:21:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FDF7C80-7CF8-7D98-7A55-8B634F7324B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99F40CF0-45CE-2490-A01B-481B0FB6C76E" name="QUESTION_COMMENT_QUESTION_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:35:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26F75BB2-E7A6-FF90-5FD2-EBED6670D9C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00C3D72A-CD01-8BED-0518-C3FCB3163BEE" name="QUESTION_COMMENT_USER_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:37:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2159DD17-032C-EEFA-929A-EC7284FC9C1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

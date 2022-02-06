@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FAC4240-A0DE-7EB3-8F8B-40DB2EA25685" name="DIM_TAG">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 12:17:06 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_id" id="173A1B8C-C544-FF4B-ED50-E755D1889AC0">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 12:17:34 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tag_name" id="68749FF5-5571-1445-6202-0EC862CA3ABC">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 12:22:26 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9C8DFE2-4F82-C2CA-42F0-44FA066EE87F" name="DIM_TAGS_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 12:22:26 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

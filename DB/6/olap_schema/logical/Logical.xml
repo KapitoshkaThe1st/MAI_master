@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="FF6E62EC-7C6B-482D-63FC-C0847FADCFB5" mainViewID="8503BA1C-6230-C4FA-0AF6-9E75E17ED223">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 11:51:29 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

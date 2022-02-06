@@ -1,0 +1,260 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="381A74A3-3E93-50DB-13F2-02F41E82A446" name="FACT_QUESTIONS">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 11:51:49 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="question_id" id="F773A710-3550-4EE1-0796-65CFF59F41EF">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:04:47 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="avg_score" id="08D8AFDF-2BFF-8F65-2E5C-0B0DE2BE2D61">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:12:52 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_score" id="B5D82D4A-ED9E-F95B-2F33-795F5F90D806">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:12:52 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_score" id="8EE9BA73-C930-3DA2-CC1E-BD65BED233A9">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:12:52 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="avg_view_count" id="78D5C7F9-99C7-4A7F-63FC-8F98464E4AF5">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:12:52 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_view_count" id="DD8DAF90-96BC-C4CE-48FF-C4273ED1E3EA">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:13:03 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_view_count" id="ECAC4918-8663-53BB-E65A-CA9F7DC5920F">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:13:13 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_view_count" id="7C05EF85-675A-DBD4-0A58-82867576B36C">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:13:20 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIM_DATE_id" id="35676F38-7DF7-76EE-E789-9BFE924E880E">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:25:40 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E70778C-9864-3FBC-C6C0-1074A5FAC777" referredColumn="FD8DF1E2-8E2C-78B7-4ECF-391D6ACDEEFE"/>
+</associations>
+</Column>
+<Column name="DIM_TAG_tag_1_id" id="E9AF8AEB-088C-ED5C-3542-ED3A5CE6DD57">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:22 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94F23F05-7933-C3EC-1847-0AF5C0A4267B" referredColumn="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</associations>
+</Column>
+<Column name="DIM_TAG_tag_2_id" id="C8B67518-8FC7-DB79-E928-89B48309195E">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:36 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A29775D0-6941-B495-3F82-BF0D318921CE" referredColumn="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</associations>
+</Column>
+<Column name="DIM_TAG_tag_3_id" id="DB9E7E49-CBF8-BBBA-91AB-7902A085557F">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:47 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2926B9DB-3887-A302-EFA2-26FEBEFF8185" referredColumn="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</associations>
+</Column>
+<Column name="DIM_TAG_tag_4_id" id="7D17F0D9-D3AC-948E-EEC7-8D507DE175C2">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:21:01 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15648ADC-996A-9881-77E4-3DF1AAAF8390" referredColumn="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</associations>
+</Column>
+<Column name="DIM_TAG_tag_5_id" id="54FFCA02-8B11-17FC-744E-589129FC5687">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:21:11 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5005F687-0188-2BFA-E784-E9AC0AA2986D" referredColumn="173A1B8C-C544-FF4B-ED50-E755D1889AC0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C41EE20B-171E-7182-FD0C-668AEFF4F67C" name="FACT_QUESTIONS_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:22:29 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F773A710-3550-4EE1-0796-65CFF59F41EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A89B3411-BE3D-D090-A4AF-F7B639D88FC7" name="FACT_QUESTIONS_DIM_DATE_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:25:40 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35676F38-7DF7-76EE-E789-9BFE924E880E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F848EF4-386E-7E90-B1D8-F392D21BBA42" name="FACT_QUESTIONS_DIM_TAG_1_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:22 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9AF8AEB-088C-ED5C-3542-ED3A5CE6DD57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B647E6A-3AA5-A790-ADE5-D0D5DE1BB95C" name="FACT_QUESTIONS_DIM_TAG_2_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:36 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8B67518-8FC7-DB79-E928-89B48309195E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="566EBAB9-5CD1-E3F3-8D45-D18FA9E008C7" name="FACT_QUESTIONS_DIM_TAG_3_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:47 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB9E7E49-CBF8-BBBA-91AB-7902A085557F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="191EF6A4-A64D-1101-7EB2-EB9F83733F34" name="FACT_QUESTIONS_DIM_TAG_4_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:21:01 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D17F0D9-D3AC-948E-EEC7-8D507DE175C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FECB5CD9-50CA-EFE9-B0F2-712E2767053B" name="FACT_QUESTIONS_DIM_TAG_5_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:21:11 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54FFCA02-8B11-17FC-744E-589129FC5687"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

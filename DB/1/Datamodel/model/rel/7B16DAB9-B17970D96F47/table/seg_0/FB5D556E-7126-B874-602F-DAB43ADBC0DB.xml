@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB5D556E-7126-B874-602F-DAB43ADBC0DB" name="TAG">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:16:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TAG_ID" id="51878797-3636-6F78-CCA1-A56C192B8BE1">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:17:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAG_NAME" id="D1D881CE-8325-70E4-3BCA-FF25D576E5F9">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:17:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="193A20F1-507B-5637-8BD2-410368E023A2" name="TAG_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:21:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51878797-3636-6F78-CCA1-A56C192B8BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

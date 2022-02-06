@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2926B9DB-3887-A302-EFA2-26FEBEFF8185" containerWithKeyObject="381A74A3-3E93-50DB-13F2-02F41E82A446" localFKIndex="566EBAB9-5CD1-E3F3-8D45-D18FA9E008C7" name="FACT_QUESTIONS_DIM_TAG_3_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-12 15:20:47 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<referredTableLongName>DIM_TAG</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1FAC4240-A0DE-7EB3-8F8B-40DB2EA25685</referredTableID>
+<keyObject>A9C8DFE2-4F82-C2CA-42F0-44FA066EE87F</keyObject>
+<referredKeyID>A9C8DFE2-4F82-C2CA-42F0-44FA066EE87F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tag_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

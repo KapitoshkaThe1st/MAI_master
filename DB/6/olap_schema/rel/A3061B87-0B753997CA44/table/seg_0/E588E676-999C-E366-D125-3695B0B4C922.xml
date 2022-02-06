@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E588E676-999C-E366-D125-3695B0B4C922" name="DIM_DATE">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 12:16:33 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_id" id="FD8DF1E2-8E2C-78B7-4ECF-391D6ACDEEFE">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:04:07 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_name" id="97EE23A3-2681-2A64-1394-13EE33B169B7">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:04:07 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="level" id="276C478F-2A44-CC60-FF71-49656EC69351">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:04:24 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53696FE8-F275-F151-343B-A978924E45B2" name="DIM_DATE_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 13:04:07 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD8DF1E2-8E2C-78B7-4ECF-391D6ACDEEFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

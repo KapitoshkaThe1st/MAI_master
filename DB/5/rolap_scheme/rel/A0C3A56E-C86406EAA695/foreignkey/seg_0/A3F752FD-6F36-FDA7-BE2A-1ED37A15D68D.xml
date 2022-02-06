@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A3F752FD-6F36-FDA7-BE2A-1ED37A15D68D" containerWithKeyObject="CF23D045-6410-DC9A-32CC-D2AE57737AC3" localFKIndex="CC50439A-C98E-5ECE-3FC1-69707AF3545B" name="CORRECTION_FACTS_DIM_PATH_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:48:59 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<referredTableLongName>DIM_PATH</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D047628E-4AFE-D563-2A4F-BD59581D1DE5</referredTableID>
+<keyObject>A7F1BA77-8826-D1BA-1CF2-20D259597C95</keyObject>
+<referredKeyID>A7F1BA77-8826-D1BA-1CF2-20D259597C95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>path_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

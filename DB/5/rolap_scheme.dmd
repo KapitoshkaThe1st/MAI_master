@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="rolap_scheme" id="6B583297-5411-2B73-9382-9BA0758B0440" version="3.5">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 18:51:17 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6B583297-5411-2B73-9382-9BA0758B0440</designId>
+</OSDM_Design>

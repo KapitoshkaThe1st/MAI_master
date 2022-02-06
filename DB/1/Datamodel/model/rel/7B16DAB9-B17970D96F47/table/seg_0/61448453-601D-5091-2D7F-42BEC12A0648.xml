@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61448453-601D-5091-2D7F-42BEC12A0648" name="ANSWER">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:41:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANSWER_ID" id="79FB3E72-5B07-F8E4-E757-C3691427F23A">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:41:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUESTION_ID" id="22F4B165-2237-064B-AEEB-5C07720A7624">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 19:49:35 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE21CED3-A802-2F5D-ADC8-8C88AAC63E71" referredColumn="6BB29A33-AF5E-3BFA-B0B1-EE9248FE87E4"/>
+</associations>
+</Column>
+<Column name="ANSWERER_USER_ID" id="7D0EB4AE-B305-498C-D581-98D0602886C4">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:24:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDEBDCD2-839B-A1DF-4619-83CCD806A2D9" referredColumn="55310D25-3D27-38E1-E383-1022CF6CAFF3"/>
+</associations>
+</Column>
+<Column name="TEXT" id="F9E14018-14F9-FD61-D8B2-3A136C780941">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:38:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="0B4E52CB-7F5C-A15A-488F-02045819C1FC">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 19:51:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOTES" id="0D8E4093-EF18-B3CA-18B3-BF01CCB43712">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:41:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_CORRECT" id="97416BEE-448C-6D6D-7053-1DCEA6AECE08">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 19:50:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="731709FE-A395-31FA-8F3E-AFC96F7FEA31" name="ANSWER_PK">
+<createdBy>alex</createdBy>
+<createdTime>2021-09-09 22:41:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79FB3E72-5B07-F8E4-E757-C3691427F23A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="352D268A-FAB4-4EC4-19F7-7D25BB750F9D" name="ANSWER_USER_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 18:24:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D0EB4AE-B305-498C-D581-98D0602886C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1030BCF6-64A1-AC1F-1D1E-8F269B9504FC" name="ANSWER_QUESTION_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-09-10 19:49:35 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22F4B165-2237-064B-AEEB-5C07720A7624"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

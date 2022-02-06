@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="olap_schema" id="B73022C2-680C-A558-7C33-ACBE22CDDB2C" version="3.5">
+<createdBy>root</createdBy>
+<createdTime>2021-12-11 11:51:29 UTC</createdTime>
+<ownerDesignName>olap_schema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B73022C2-680C-A558-7C33-ACBE22CDDB2C</designId>
+</OSDM_Design>

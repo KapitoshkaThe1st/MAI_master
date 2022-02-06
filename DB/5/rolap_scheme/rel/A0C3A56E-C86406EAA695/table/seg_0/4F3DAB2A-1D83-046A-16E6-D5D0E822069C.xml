@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F3DAB2A-1D83-046A-16E6-D5D0E822069C" name="DIM_DATE">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:11:20 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_id" id="D04018B3-D6E1-D5B6-D901-36B956A4DFBC">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:37:11 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>F92B34B5-EB03-5AF3-6911-129A13785304</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day" id="4B13424E-4CE2-59EF-B583-EE0B7F94141B">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:37:11 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="month" id="9F89583D-07DF-0D2A-85BC-6873195E1D4B">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:37:11 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="5BACCDA3-1E09-A326-6B1F-D9965CCB2DB3">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:37:11 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7F3C227-8195-101D-5FB1-3B737286B714" name="DIM_DATE_PK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:48:09 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D04018B3-D6E1-D5B6-D901-36B956A4DFBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

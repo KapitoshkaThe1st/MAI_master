@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="892A19EB-BD15-E8FC-4DF8-2211EE21B284" containerWithKeyObject="CF23D045-6410-DC9A-32CC-D2AE57737AC3" localFKIndex="23330CA6-9104-577D-8433-E236ABB38FC9" name="CORRECTION_FACTS_DIM_USER_FK">
+<createdBy>root</createdBy>
+<createdTime>2021-12-03 21:49:04 UTC</createdTime>
+<ownerDesignName>rolap_scheme</ownerDesignName>
+<referredTableLongName>DIM_USER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>27AD2DE0-1346-8C2A-EBDB-07C4FA1D007C</referredTableID>
+<keyObject>D62C9A6A-0A54-316A-C42B-9FA074567B05</keyObject>
+<referredKeyID>D62C9A6A-0A54-316A-C42B-9FA074567B05</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>user_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
